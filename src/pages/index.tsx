@@ -26,7 +26,7 @@ export default function Home({posts, comments}: HomeProps) {
       <main>
         { session?.user && 
           <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-lg md:text-5xl text-center mb-4 text-blue-500'>Welcome {session?.user?.name?.split(" ")[0]}</h1> 
+            <h1 className='text-lg md:text-5xl text-center mb-4 text-white'>Welcome {session?.user?.name?.split(" ")[0]}</h1> 
             <img src={session?.user?.image as string} alt="User Gmail Image" className='rounded-full mb-4'/>
           </div>
         }
@@ -35,7 +35,7 @@ export default function Home({posts, comments}: HomeProps) {
             alt='Logo Tarefas+'
             src={todoImg}
             priority
-            className='object-contain w-auto h-auto mx-3 md:mx-5 max-w-3xl'
+            className='object-contain w-auto h-auto mx-3 md:mx-5'
           />
         </div>
         <h1 className='text-white text-center m-7 leading-8 md:text-4xl'>Application built for you to organize <br /> your studies and tasks</h1>
