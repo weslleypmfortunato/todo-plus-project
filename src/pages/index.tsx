@@ -23,7 +23,7 @@ export default function Home({posts, comments}: HomeProps) {
         <title>Tasks+</title>
       </Head>
       <main>
-        { session?.user && <h1 className='text-white text-lg md:text-5xl text-center'>Welcome {session?.user?.name}</h1> }
+        { session?.user && <h1 className='text-lg md:text-5xl text-center mb-3 text-blue-500'>Welcome {session?.user?.name?.split(" ")[0]}</h1> }
         <div className='flex flex-col items-center justify-center overflow-y-scroll'>
           <Image 
             alt='Logo Tarefas+'
