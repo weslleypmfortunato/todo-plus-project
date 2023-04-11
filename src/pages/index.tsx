@@ -27,13 +27,7 @@ export default function Home({posts, comments}: HomeProps) {
         { session?.user && 
           <div className='flex flex-col items-center justify-center'>
             <h1 className='text-lg md:text-5xl text-center mb-4 text-blue-500'>Welcome {session?.user?.name?.split(" ")[0]}</h1> 
-            <Image 
-              alt='Logo Tarefas+'
-              src={session?.user?.image as string}
-              priority
-              className='w-auto h-auto'
-            />
-            <img src={session?.user?.image as string} alt="Test" />
+            <img src={session?.user?.image as string} alt="User Gmail Image" className='rounded-full mb-4'/>
           </div>
         }
         <div className='flex flex-col items-center justify-center overflow-y-scroll'>
