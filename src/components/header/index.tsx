@@ -27,7 +27,7 @@ export function Header() {
           <button 
             className='text-white hover:text-black bg-transparent hover:bg-white hover:font-extrabold px-6 py-0.5 rounded-3xl border border-white hover:scale-105 transform duration-500' 
             onClick={() => signOut()}>
-            Hi, {session?.user?.name?.split(" ")[0]}
+            Logout
           </button>
         ) : (
           <button

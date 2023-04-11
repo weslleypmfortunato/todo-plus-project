@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import heroPng from '../assets/hero.png'
+// import heroPng from '../assets/hero.png'
+import todoImg from '../assets/todo-new.png'
 import { GetStaticProps } from 'next'
 import { db } from '../services/firebaseConnection'
 import { collection, getDocs } from 'firebase/firestore'
@@ -23,11 +24,16 @@ export default function Home({posts, comments}: HomeProps) {
         <title>Tasks+</title>
       </Head>
       <main>
-        { session?.user && <h1 className='text-lg md:text-5xl text-center mb-3 text-blue-500'>Welcome {session?.user?.name?.split(" ")[0]}</h1> }
+        { session?.user && 
+          <div className='flex flex-col items-center justify-center'>
+            <h1 className='text-lg md:text-5xl text-center mb-5 text-blue-500'>Welcome {session?.user?.name?.split(" ")[0]}</h1> 
+            <span className='w-20'>{session?.user?.image}</span>
+          </div>
+        }
         <div className='flex flex-col items-center justify-center overflow-y-scroll'>
           <Image 
             alt='Logo Tarefas+'
-            src={heroPng}
+            src={todoImg}
             priority
             className='object-contain w-auto h-auto'
           />
