@@ -4,6 +4,7 @@ import heroPng from '../assets/hero.png'
 import { GetStaticProps } from 'next'
 import { db } from '../services/firebaseConnection'
 import { collection, getDocs } from 'firebase/firestore'
+import { useSession } from "next-auth/react";
 
 interface HomeProps {
   posts: number
@@ -11,6 +12,8 @@ interface HomeProps {
 }
 
 export default function Home({posts, comments}: HomeProps) {
+  const { data: session } = useSession()
+
   return (
     <div className='bg-black w-full h-screen flex justify-center items-center flex-col overflow-hidden'>
       <Head>
@@ -20,6 +23,7 @@ export default function Home({posts, comments}: HomeProps) {
         <title>Tasks+</title>
       </Head>
       <main>
+        { session?.user && <h1 className='text-white text-lg md:text-5xl text-center'>Welcome {session?.user?.name}</h1> }
         <div className='flex flex-col items-center justify-center overflow-y-scroll'>
           <Image 
             alt='Logo Tarefas+'

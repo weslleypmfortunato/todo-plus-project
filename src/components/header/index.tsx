@@ -11,7 +11,7 @@ export function Header() {
       <section className="px-4 w-full flex items-center max-w-5xl justify-between">
         <nav className="flex items-center">
           <Link href='/'>
-            <h1 className='text-white text-3xl'>Tasks<span className="text-red-500 font-bold pl-0.5">+</span></h1>
+            <h1 className='text-white text-3xl'>ToDo<span className="text-red-500 font-bold pl-0.5">+</span></h1>
           </Link>
 
           { session?.user && (
