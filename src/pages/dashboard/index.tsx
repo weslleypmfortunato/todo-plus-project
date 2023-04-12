@@ -98,7 +98,7 @@ export default function Dashboard({ user }: HomeProps) {
       <main>
         <section className='bg-black w-full flex items-center justify-center'>
           <div className='max-w-5xl w-full px-4 pb-7 mt-14'>
-            <h1 className='text-white mb-2'>Add a task</h1>
+            <h1 className='text-white mb-2'>Add a new todo</h1>
             <form onSubmit={handleSubmit}>
               <Textarea 
                 placeholder='Type your task...'
@@ -112,13 +112,13 @@ export default function Dashboard({ user }: HomeProps) {
                   onChange={handleChangePublic}
                   className='w-4 h-4 my-3'
                 />
-                <label className='text-white ml-2'>Make task public</label>
+                <label className='text-white ml-2'>Make todo public</label>
               </div>
               <button 
                 type="submit"
                 className='w-full border-0 rounded text-white bg-blue-500 py-2 text-lg'
               >
-                Add Task
+                Add Todo
               </button>
             </form>
           </div>
@@ -127,7 +127,7 @@ export default function Dashboard({ user }: HomeProps) {
         <section className='mt-8 mx-auto mb-0 px-4 w-full max-w-5xl flex flex-col'>
           { tasks.length < 1 ? 
             <h1 className='text-center text-2xl mb-3 text-red-500'>You didn't create tasks yet!</h1> :
-            <h1 className='text-center text-2xl mb-3'>My Tasks</h1> }
+            <h1 className='text-center text-2xl mb-3'>My Todos</h1> }
 
           { tasks.map(task => (
             <article key={task.id} className='mb-3 leading-8 flex flex-col items-start border border-gray-400 rounded p-3'>

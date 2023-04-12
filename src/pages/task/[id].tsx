@@ -80,7 +80,7 @@ export default function Task({ singleTask, commentsList }: SingleTaskProps) {
         <title>Task Details Page</title>
       </Head>
       <main className="mt-16 w-full">
-        <h1 className="mb-3 text-2xl font-semibold">Task</h1>
+        <h1 className="mb-3 text-2xl font-semibold">Todo:</h1>
         <article className="border border-gray-400 p-3 leading-8 rounded flex items-center justify-center">
           <p className="whitespace-pre-wrap w-full">
             { singleTask.task }
@@ -88,7 +88,7 @@ export default function Task({ singleTask, commentsList }: SingleTaskProps) {
         </article>
       </main>
       <section className="w-full my-4 max-w-5xl">
-        <h2 className="mt-3 mb-1 mx-0 text-xl">Add comments: </h2>
+        <h2 className="mt-3 mb-1 mx-0 text-xl">Add comment: </h2>
         <form onSubmit={handleSubmit}>
           <Textarea 
             disabled={!session?.user}
