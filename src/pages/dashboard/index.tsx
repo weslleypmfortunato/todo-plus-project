@@ -81,7 +81,7 @@ export default function Dashboard({ user }: HomeProps) {
 
   async function handleShare(id: string) {
     await navigator.clipboard.writeText(
-      `${process.env.NEXT_PUBLIC_URL}/task/${id}`
+      `https://todo-plus-built.vercel.app/task/${id}`
     )
   }
 
