@@ -34,7 +34,7 @@ export default function Home({posts, comments}: HomeProps) {
             alt='Logo Tarefas+'
             src={todoImg}
             priority
-            className='object-contain w-auto h-auto mx-3 md:mx-5'
+            className='object-contain w-auto h-auto px-3 md:px-5'
           />
         </div>
         <h1 className='text-white text-center m-7 leading-8 md:text-4xl'>Application built for you to organize <br /> your studies and tasks</h1>
