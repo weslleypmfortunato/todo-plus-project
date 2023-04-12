@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import heroPng from '../assets/hero.png'
 import todoImg from '../assets/todo-new.png'
 import { GetStaticProps } from 'next'
 import { db } from '../services/firebaseConnection'

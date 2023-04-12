@@ -6,6 +6,7 @@ import { Textarea } from "../../components/textarea";
 import { useState, ChangeEvent, FormEvent } from "react";
 import { useSession } from "next-auth/react";
 import { FaTrash } from 'react-icons/fa'
+import Link from "next/link"
 
 interface SingleTaskProps {
   singleTask: {
@@ -127,6 +128,11 @@ export default function Task({ singleTask, commentsList }: SingleTaskProps) {
           </article>
         )) }
       </section>
+      <Link href='/dashboard'>
+        <p className="text-lg underline text-blue-500 my-5">
+          Back
+        </p>
+      </Link>
     </div>
   )
 }
