@@ -1,38 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center"> 📝 ToDo+ </h1>
+<h2> 🧑🏻‍💻 Overview </h2>
 
-## Getting Started
+<p> ToDo+ web app built using NextJS..
 
-First, run the development server:
+ToDo+ is a project built with NextJS, TypeScript, TailwindCSS, and NextAuth that offers a modern and efficient solution for managing tasks. It uses Google Firebase as the database and is deployed on Vercel, ensuring fast performance and scalability. With its sleek design and intuitive user interface, ToDo+ enables users to manage their tasks with ease. NextAuth offers a secure and easy-to-use authentication solution, ensuring user privacy and data protection. ToDo+ is an excellent task management solution for your day-to-day. </p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<h2>🔐 Used Technologies 🚀</h2>
+<ul>
+  <li>NextJS</li>
+  <li>TypeScript</li>
+  <li>TailwindCSS</li>
+  <li>NextAuth</li>
+  <li>Google Firebase</li>
+  <li>Vercel</li>
+</ul>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2> 🖥 Home Page </h2>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<div align='center'>
+  <img width="500" alt="ToDo+" src="https://user-images.githubusercontent.com/111170704/232164154-9c943f58-94f5-42cc-80d6-f8a88d529722.png">
+</div>
+<br></br>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<h2>🧑🏻‍💻 Learn More</h2>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<p>To learn NextJS, check out the <a href="https://nextjs.org/">NextJS documentation</a>.</p>
+<p>To learn TypeScript, check out the <a href="https://www.typescriptlang.org/docs/">TypeScript documentation</a>.</p>
+<p>To learn about TailwindCSS, check out the <a href="https://tailwindcss.com/">TailwindCSS documentation</a>.</p>
+<p>To learn NextAuth, check out the <a https://next-auth.js.org/">NextAuth documentation</a>.</p>
+<p>To learn Google Firebase, check out the <a href="https://firebase.google.com/">Google Firebase documentation</a>.</p>
+<p>To learn Vercel, check out the <a href="https://vercel.com/">Vercel documentation</a>.</p>
 
-## Learn More
+<h2>📝 Execute it</h2>
 
-To learn more about Next.js, take a look at the following resources:
+<p>The project has been deployed on the Vercel and can be accessed through the link below: </p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<a href="https://todo-plus-built.vercel.app">
+  ToDo+
+</a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<h2> 👨 About the developer</h2>
 
-## Deploy on Vercel
+<p>I am a passionate animal lover with a keen interest in Canadian weather. After spending 13 years working for Foxconn manufacturing Apple products, where I gained valuable experience in project management and quality reliability testing in the electronics sector, I decided to take on a new challenge by moving to Canada and starting a new career in web development.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I am currently pursuing my dream of becoming a proficient web developer by attending college and learning everything from scratch. Being in Victoria, BC, allows me to explore my love for nature by hiking and discovering new places in my spare time.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I am a firm believer in continuous improvement and pay close attention to every detail, no matter how small, to ensure the final product is of the highest quality. I am excited to see where my newfound skills and experiences will take me, and I am eager to make the most of every opportunity that comes my way.</p>
